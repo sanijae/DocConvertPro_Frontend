@@ -1,0 +1,56 @@
+
+.about-page {
+    background-image: url('../../Assets/Images/large-triangles.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  }
+  
+  .about-wrapper {
+    width: 100%;
+    padding: 100px 0;
+    margin: 0 auto;
+    background: rgba(0,0,0,.1);
+  }
+  .about-content {
+    max-width: 800px;
+    padding: 100px 0;
+    margin: 0 auto;
+    background: rgba();
+  }
+  
+  .about-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .about-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .about-content ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  @media screen and (max-width:800px) {
+    .about-page{
+        padding: 120px 20px;
+    }
+    .about-wrapper{
+      background-color: transparent;
+    }
+  }

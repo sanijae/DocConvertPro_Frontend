@@ -1,0 +1,271 @@
+.navbar {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Transparent background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    z-index: 1000;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+  .drop-btn-optimizer,
+  .drop-btn-to-pdf,
+  .drop-btn-from-pdf{
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: #333;
+    font-size: 1em;
+  }
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-links li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #007bff;
+  }
+  .dropdown-content-opt,
+  .dropdown-content-to,
+  .dropdown-content-from{
+    position: absolute;
+    z-index: 100;
+    width: fit-content;
+    max-width: 300px;
+    padding: 1em;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  .dropdown-content-opt li,
+  .dropdown-content-to li,
+  .dropdown-content-from li{
+    margin: 10px auto;
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+  }
+  .dropdown-content-opt li a,
+  .dropdown-content-to li a,
+  .dropdown-content-from li a {
+    width: 100%;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-align: left;
+    margin: 10px auto;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+}
+.dropdown-content-opt li a:hover,
+.dropdown-content-to li a:hover,
+.dropdown-content-from li a:hover{
+  background: #007bff;
+  color: #fff;
+}
+  .dropdown-pdf-optimizer .dropdown-content-opt{
+    display: none;
+  }
+  .dropdown-to-pdf .dropdown-content-to{
+    display: none;
+  }
+  .dropdown-from-pdf .dropdown-content-from{
+    display: none;
+  }
+  .dropdown-pdf-optimizer:hover .dropdown-content-opt{
+    display: block;
+  }
+  .dropdown-to-pdf:hover .dropdown-content-to{
+    display: block;
+  }
+  .dropdown-from-pdf:hover .dropdown-content-from{
+    display: block;
+  }
+  
+  .nav-auth {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-auth li {
+    margin-right: 20px;
+  }
+  
+  .nav-auth li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-auth li a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .nav-auth li .sign{
+    background: #007bff;
+    padding: 10px;
+  }
+  .nav-auth .menu{
+    display: none;
+    padding: 10px;
+    font-size: 20px;
+    align-items: center;
+    background-color: #fff;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .nav-auth li a:hover {
+    font-style: italic;
+  }
+  .icon{
+    background: transparent;
+    object-fit: cover;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  @media screen and (max-width:1000px) {
+    .nav-auth .menu{
+      display: block;
+    }
+    .nav-links{
+      position: fixed;
+      top: 4.8em; 
+      left: 0;
+      right: 0;
+      width: 100%;
+      overflow: scroll;
+      background-color: rgba(255, 255, 255, 0.9); 
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+      z-index: 1000;
+    }
+    .nav-links {
+      flex-direction: column;
+    }
+    .nav-links li{
+      text-align: left;
+      padding: 1em;
+    }
+    .nav-links li a{
+      font-weight: bold;
+      font-size: 17px;
+    }
+    .drop-btn-optimizer,
+    .drop-btn-to-pdf,
+    .drop-btn-from-pdf{
+      font-weight: bold;
+      padding: 5px;
+      margin: 1px auto;
+      font-size: 17;
+      background-color: transparent;
+      border-bottom: 1px solid #007bff;
+      width: 100%;
+    }
+    .dropdown-pdf-optimizer, 
+    .dropdown-to-pdf, 
+    .dropdown-from-pdf{
+      width: 100%;
+      background-color: red;
+      position: relative;
+    }
+    .dropdown-pdf-optimizer .dropdown-content-opt{
+      display: block;
+    }
+    .dropdown-to-pdf .dropdown-content-to{
+      display: block;
+    }
+    .dropdown-from-pdf .dropdown-content-from{
+      display: block;
+    }
+    /* .dropdown-pdf-optimizer:hover .dropdown-content-opt{
+      display: none;
+    }
+    .dropdown-to-pdf:hover .dropdown-content-to{
+      display: none;
+    }
+    .dropdown-from-pdf:hover .dropdown-content-from{
+      display: none;
+    } */
+    .dropdown-content-opt,
+    .dropdown-content-to,
+    .dropdown-content-from{
+      position: static;
+      z-index: inherit;
+      width: 100%;
+      padding: 2px;
+      list-style: none;
+      display: block;
+      background-color: transparent;
+    }
+    .dropdown-content-opt li,
+    .dropdown-content-to li,
+    .dropdown-content-from li{
+      background-color: transparent;
+      width: 100%;
+      text-align: left;
+      padding: 10px;
+      margin: 4px auto;
+    }
+    .dropdown-content-opt li a,
+     .dropdown-content-to li a,
+     .dropdown-content-from li a {
+      color: #333;
+      font-size: 13px;
+      padding-left: 10px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      text-align: left;
+      -webkit-transition: color 0.3s ease;
+      -moz-transition: color 0.3s ease;
+      -ms-transition: color 0.3s ease;
+      -o-transition: color 0.3s ease;
+  }
+  }
